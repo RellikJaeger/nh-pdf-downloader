@@ -4,33 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nh pdf</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    
+    <title>nHentai PDF Download</title>
 </head>
 
 <body>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
-
-    <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-            apiKey: "AIzaSyDnCSwYc81I9y_MS06UFjgb0oagOFhM7kg",
-            authDomain: "nh-pdf-downloader.firebaseapp.com",
-            databaseURL: "https://nh-pdf-downloader.firebaseio.com",
-            projectId: "nh-pdf-downloader",
-            storageBucket: "nh-pdf-downloader.appspot.com",
-            messagingSenderId: "792106971581",
-            appId: "1:792106971581:web:eeb9f713ba007e74e1e2d4",
-            measurementId: "G-56WHG9Q2HY"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
-    </script>
+    <input type="search" name="Doujin ID" id="idnum">
+    <div id="cont">
+        <a class="waves-effect waves-light btn"><i class="material-icons left">add</i>Add to queue</a>
+        <a class="waves-effect waves-light btn"><i class="material-icons left">cloud_download</i>Download All</a>
+        <a class="waves-effect waves-light btn"><i class="material-icons left">clear</i>Clear All</a>
+    </div>
+    <div id="dlist"></div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>
